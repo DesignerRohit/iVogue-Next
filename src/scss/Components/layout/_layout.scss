@@ -1,0 +1,179 @@
+
+
+
+  .covertype.active{
+    border-width: 0px 0px 3px 0px !important;
+    border-style: solid !important;
+    border-color: #000090 !important;
+    border-radius: 8px;
+  }
+  .covertype{
+    cursor: pointer;
+  }
+  .chat-icon{
+    bottom: 15px;
+    right: 50px;
+    height: 55px;
+    width: 55px;
+}
+.mobile-cover-images{
+  transition: all 0.08s ease-in-out;
+}
+.round-42{
+  width: 42px;
+  height: 42px;
+}
+.round-25{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+.round-35{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #B8CFF9;
+}
+.bg-brown {
+  background-color: #92711C;
+}
+
+// Carousel
+// .thumbSlider .slick-current > .active-slide{
+//   background-color: rgb(175, 175, 255);
+// }
+.thumbSlider{
+  .slick-current{
+    .active-slide{
+      background-color: rgb(226, 226, 254);
+      border: 1px solid var(--bg-light-primary);
+    }
+  }
+}
+
+.product-slider .slick-prev:before,.product-slider .slick-next:before{
+  color: black !important;
+}
+.product-slider .slick-next {
+  right: 24px !important;
+}
+.product-slider .slick-prev {
+  left: 24px !important;
+  z-index: 3 !important;
+}
+.product-slider .slick-dots{
+  bottom: 24px !important;
+}
+.product-slider .slick-dots li button:before{
+  color: #123A3E;
+  font-size: 10px;
+}
+:focus-visible {
+  outline: none;
+}
+.letter{
+  letter-spacing: 1px;
+}
+.half-letter{
+  letter-spacing: 0.5px;
+}
+.round-12{
+  width: 7px;;
+  height: 7px;
+  border-radius: 50%;
+}
+.pointer{
+  cursor: pointer;
+}
+.check{
+  background-color: #D9D9D9;
+  color: black;
+  font-size: 22px;
+  padding: 8px 24px;
+  &:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+}
+
+// Swiper Js Library
+
+.accessories .slick-arrow.slick-next,
+.accessories .slick-arrow.slick-prev{
+background-color: #ffffff;
+height:40px;
+width: 40px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 50%;
+opacity: 0.8;
+color: black;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+border: 7px solid white;
+}
+.accessories .slick-prev{
+  left: -40px !important;
+  z-index: 20;
+}
+.accessories .slick-next{
+  right: -40px !important;
+  z-index: 20;
+}
+
+.accessories .slick-arrow.slick-next,
+.accessories .slick-arrow.slick-prev
+{
+  &:hover{
+    background-color: #2574f5;
+    border-color: #2574f5;
+    opacity:1;
+    &::after{
+     color: white !important;
+    }
+    &::before{
+      color: white !important;
+    }
+  }
+
+
+  
+}
+
+
+.accessories .slick-prev::before,.accessories .slick-next::before{
+  font-family: slick !important;
+  opacity: 0 !important;
+    }
+.accessories .slick-arrow.slick-prev {
+  left: 0;
+  background: url("https://img.icons8.com/ios/50/000000/long-arrow-left.png") 0
+    0 / 100% no-repeat;
+}
+.accessories .slick-arrow.slick-next {
+  right: 0;
+  background: url("https://img.icons8.com/ios/50/000000/long-arrow-right.png") 0 0 / 100% no-repeat;
+}
+
+.accessories .arrows{
+height:20px;
+width:20px;
+margin: 1px;
+
+}
+
+.form-check-input{
+  width: 25px !important;
+  height: 25px !important;
+  right: 0;
+  border: 1px solid #161616 !important;
+}
+
+// Customer review
+.review-rating{
+  border-color:var(--bs-light-primary) ;
+  border-style: solid;
+  border-width: 18px 14px;
+  border-radius: 20px;
+}
