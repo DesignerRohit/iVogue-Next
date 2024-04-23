@@ -66,3 +66,35 @@
 
     }
 }
+
+.contact-wrap {
+
+    height: 100%;
+
+    &:after {
+        position: absolute;
+        content: "";
+        left: 100%;
+        right: 0;
+        width: 100vw;
+        background-color: var(--bs-white);
+        top: 0;
+        height: 100%;
+    }
+
+    .form-control-lg {
+        padding: 15px 15px;
+    }
+
+    .force-opaque::placeholder {
+        font-size: 12px;
+        color: $black;
+        opacity: 1;
+      }
+}
+
+
+
+body {
+    overflow-x: hidden;
+}
