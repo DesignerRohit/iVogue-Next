@@ -21,7 +21,7 @@ const SelectedProduct = () => {
     }, []);
     return (
       <>
-      <div className="slider-container container product-slider">
+      <div className="slider-container container product-slider mt-4">
         <div className="row">
           <div className="col-lg-6">
             <h2> </h2>
