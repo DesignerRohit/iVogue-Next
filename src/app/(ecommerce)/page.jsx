@@ -7,8 +7,10 @@ import Instafeed from "../Components/HeroSection/InstaFeed";
 import LatestBlog from "../Components/HeroSection/LatestBlog";
 import Newsletter from "../Components/HeroSection/Newsletter";
 import WhyBuy from "../Components/HeroSection/Whybuy";
-import ExploreRange from  "../Components/HeroSection/ExploreRange";
-import ImageWithText from "../Components/HeroSection/ImagewithText";
+import ImageWithText from "../Components/HeroSection/ImageWithText";
+import ExploreRange from "../Components/HeroSection/ExploreRange";
+
+
 export default function Home() {
   return (
      <main>

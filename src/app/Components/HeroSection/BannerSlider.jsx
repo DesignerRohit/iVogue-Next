@@ -17,7 +17,7 @@ const BannerSlide = () => {
     }
     return (
         <>
-            <div className='container py-8'>
+            <div className='container py-8 px-0'>
             <div className="slider-container banner-slider">
                     <Slider {...settings}>
                     {BannersliderData.map((bannerslider) => {

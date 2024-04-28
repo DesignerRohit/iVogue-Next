@@ -5,14 +5,14 @@ import Image from 'next/image'
 import { useRouter } from 'next/navigation';
 import React, { useState } from 'react'
 
-const MobileCoverCard = ({title,category,price,discountedPrice,thumbnail,image,discount}) => {
+const ProductCard = ({title,category,price,discountedPrice,thumbnail,image,discount,prodId,parenturl}) => {
   const router = useRouter();
     const [frontimg,setFrontimg]=useState("");
     const [backimg,setBackimg]=useState("d-none");
   return (
     <>
       
-      <div className="col-xxl-3 col-xl-4  col-lg-6" onClick={() => {router.push("/mobile-covers/red")}}>
+      <div className="col-xl-4  col-lg-6" onClick={() => {router.push(`/category/${parenturl}/${prodId}`)}}>
         <div className="bg-light py-3 px-13">
         <div
           className="group-img position-relative"
@@ -58,4 +58,4 @@ const MobileCoverCard = ({title,category,price,discountedPrice,thumbnail,image,d
   );
 };
 
-export default MobileCoverCard;
+export default ProductCard;

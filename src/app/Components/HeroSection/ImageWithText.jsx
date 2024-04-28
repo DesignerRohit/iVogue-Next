@@ -2,11 +2,10 @@
 import React from 'react'
 import Image from 'next/image'
 import img1 from "/public/images/homepage/imgtext.png";
-const ImageText = () => {
+const ImageWithText = () => {
     return (
         <>
             <div className='container bg-primary-subtle'>
-
                 <div className='row position-relative d-flex align-items-center'>
                     <div className='col-md-7'>
                         <div className='p-4'>
@@ -32,4 +31,4 @@ const ImageText = () => {
     )
 }
 
-export default ImageText
+export default ImageWithText

@@ -32,7 +32,7 @@ export const BlogData = [
         title:'Lorem ipsum dolor sit amet consectetur.',
         desc:'Lorem ipsum dolor sit amet consectetur. Sed sed sit nunc convallis enim neque pharetra. Ante erat at arcu turpis ultricies. Senectus at ipsum vitae id quam tortor sed senectus sed. ',
         date:'15 Nov 2022',
-        link:'#'
+        link:'/blog/blog-details'
     },
     { 
         img: blog2, 
@@ -40,7 +40,7 @@ export const BlogData = [
         title:'Lorem ipsum dolor sit amet consectetur.',
         desc:'Lorem ipsum dolor sit amet consectetur. Sed sed sit nunc convallis enim neque pharetra. Ante erat at arcu turpis ultricies. Senectus at ipsum vitae id quam tortor sed senectus sed. ',
         date:'15 Nov 2022',
-        link:'#'
+        link:'/blog/blog-details'
     },
     { 
         img: blog3, 
@@ -48,7 +48,7 @@ export const BlogData = [
         title:'Lorem ipsum dolor sit amet consectetur.',
         desc:'Lorem ipsum dolor sit amet consectetur. Sed sed sit nunc convallis enim neque pharetra. Ante erat at arcu turpis ultricies. Senectus at ipsum vitae id quam tortor sed senectus sed. ',
         date:'15 Nov 2022',
-        link:'#'
+        link:'/blog/blog-details'
     }
 ]
 
@@ -106,7 +106,7 @@ export const CollectionData = [
         desc:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         key:'iphone1',
         tag:'Half Price', 
-        url:'#'
+        url:'leather01'
     },
     { 
         img: coll2,
@@ -114,7 +114,7 @@ export const CollectionData = [
         desc:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         key:'iphone12',
         tag:'Half Price', 
-        url:'#'
+        url:'leather02'
     },
     { 
         img: coll3,
@@ -122,7 +122,7 @@ export const CollectionData = [
         desc:'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
         key:'iphone13',
         tag:'Half Price', 
-        url:'#'
+        url:'hard01'
     }
     
 ]
@@ -213,25 +213,25 @@ export const ExploreRangeTab1 = [
         img: expl1,
         title:'Phone Cases',
         key:'exp1',
-        url:'#'
+        url:'phone-case'
     },
     { 
         img: expl2,
         title:'Lather case',
         key:'exp2',
-        url:'#'
+        url:'leather-case'
     },
     { 
         img: expl3,
         title:'hard case',
         key:'exp3',
-        url:'#'
+        url:'hard-case'
     },
     { 
         img: expl4,
         title:'transparent case',
         key:'exp4',
-        url:'#'
+        url:'transparent-case'
     },
   
 ]
@@ -241,25 +241,25 @@ export const ExploreRangeTab2 = [
         img: expl3,
         title:'hard case',
         key:'lather3',
-        url:'#'
+        url:'hard-case'
     },
     { 
         img: expl4,
         title:'transparent case',
         key:'lather4',
-        url:'#'
+        url:'transparent-case'
     },
     { 
         img: expl1,
         title:'Phone Cases',
         key:'lather1',
-        url:'#'
+        url:'phone-case'
     },
     { 
         img: expl2,
         title:'Lather case',
         key:'lather2',
-        url:'#'
+        url:'leather-case'
     },
 ]
 
@@ -269,26 +269,26 @@ export const ExploreRangeTab3 = [
         img: expl1,
         title:'Phone Cases',
         key:'hard1',
-        url:'#'
+        url:'phone-case'
     },
     { 
         img: expl3,
         title:'hard case',
         key:'hard3',
-        url:'#'
+        url:'hard-case'
     },
     { 
         img: expl4,
         title:'transparent case',
         key:'hard4',
-        url:'#'
+        url:'transparent-case'
     },
    
     { 
         img: expl2,
         title:'hard case',
         key:'hard2',
-        url:'#'
+        url:'hard-case'
     },
 ]
 export const ExploreRangeTab4 = [
@@ -297,25 +297,25 @@ export const ExploreRangeTab4 = [
         img: expl2,
         title:'hard case',
         key:'trp2',
-        url:'#'
+        url:'hard-case'
     },
     { 
         img: expl1,
         title:'Phone Cases',
         key:'trp1',
-        url:'#'
+        url:'phone-case'
     },
     { 
         img: expl3,
         title:'lather case',
         key:'trp3',
-        url:'#'
+        url:'leather-case'
     },
     { 
         img: expl4,
         title:'transparent case',
         key:'trp4',
-        url:'#'
+        url:'transparent-case'
     },
    
    
@@ -326,26 +326,26 @@ export const ExploreRangeTab5 = [
         img: expl4,
         title:'transparent case',
         key:'ph4',
-        url:'#'
+        url:'transparent-case'
     },
    
     { 
         img: expl2,
         title:'hard case',
         key:'ph2',
-        url:'#'
+        url:'hard-case'
     },
     { 
         img: expl1,
         title:'Phone Cases',
         key:'ph1',
-        url:'#'
+        url:'phone-case'
     },
     { 
         img: expl3,
         title:'lather case',
         key:'ph3',
-        url:'#'
+        url:'leather-case'
     },
    
    

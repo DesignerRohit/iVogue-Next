@@ -3,7 +3,7 @@ import React from 'react'
 const ProductInfo = () => {
   return (
     <>
-    <div className="container my-52">
+    <div className="container my-lg-52 my-11">
     <div className="accordion accordion-flush" id="accordionFlushExample">
   <div className="accordion-item">
     <h2 className="accordion-header">

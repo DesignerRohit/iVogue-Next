@@ -3,7 +3,9 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { CollectionData } from '@/api/homepage/homepage'
+import { useRouter } from 'next/navigation'
 const FeatureCollections = () => {
+    const router = useRouter();
     return (
         <>
             <div className='container pt-12'>
@@ -12,7 +14,7 @@ const FeatureCollections = () => {
                     {CollectionData.map((featurecoll) => {
                         return (
                             <div className='col-md-4' key={featurecoll.key}>
-                                <Link href={featurecoll.url} >
+                                <Link href={`/category/mobile-covers/${featurecoll.url}`} >
                                     <div className='position-relative hover-img overflow-hidden collection-box'>
                                         <Image
                                             src={featurecoll.img}
@@ -33,7 +35,9 @@ const FeatureCollections = () => {
                         )
                     })}
                     <div className='d-flex justify-content-center mt-8 mb-4'>
-                        <button className="btn btn-outline-indigo px-12 mt-2 py-2 w-100 fw-normal w-auto">View All</button>
+                        <button className="btn btn-outline-indigo px-12 mt-2 py-2 w-100 fw-normal w-auto" onClick={()=>{
+                            router.push("/category/mobile-covers")
+                        }}>View All</button>
                     </div>
 
                 </div>

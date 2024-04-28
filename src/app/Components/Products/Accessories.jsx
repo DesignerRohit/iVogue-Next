@@ -13,15 +13,22 @@ const Accessories = () => {
         slidesToShow: 4,
         slidesToScroll: 4,
         responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                infinite: true,
-                dots: true
-              }
-            },
+          {
+            breakpoint: 1400,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+            }
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              infinite: true,
+            }
+          },
             {
               breakpoint: 600,
               settings: {
@@ -32,6 +39,7 @@ const Accessories = () => {
             },
             {
               breakpoint: 480,
+              arrows:false,
               settings: {
                 slidesToShow: 1,
                 slidesToScroll: 1
@@ -49,7 +57,7 @@ const Accessories = () => {
           <Icon icon="ep:info-filled" className="text-subtle-dark fs-5" />
         </div>
         {/* Slider */}
-        <div className="slider-container accessories mb-53">
+        <div className="slider-container accessories">
       <Slider {...settings}>
         <AccessoriesCard image={accessory} price={1199} />
         <AccessoriesCard image={accessory} price={1199} />

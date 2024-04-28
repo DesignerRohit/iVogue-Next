@@ -14,7 +14,7 @@ $gray-600: #3C4043 !default;
 $black: #000 !default;
 
 // Color
-$blue: #00297a !default;
+$blue:  #00297a !default;
 $indigo: #000090 !default;
 $purple: #060679 !default;
 $pink: #d63384 !default;
@@ -28,8 +28,8 @@ $cyan: #539BFF !default;
 // Main Colors
 $primary: #004FF2 !default;
 $secondary: #49BEFF !default;
-$indigo: $indigo !default;
-$purple: $purple !default;
+$indigo:$indigo !default;
+$purple:$purple !default;
 $success: $green !default;
 $info: $cyan !default;
 $warning: $yellow !default;
@@ -40,22 +40,29 @@ $dark: #123A3E !default;
 $dark-light: $gray-600 !default;
 $light-gray: #f0f0f0 !default;
 $dark-gray: $muted !default;
-$gray: #F8F9FA !default;
-$lightpink: $gray-500 !default;
+$gray:#F8F9FA !default;
+$lightpink:$gray-500 !default;
 
 // light colors
-$light-primary: #E0EAFD;
+$light-primary: #F1F6FF;
 $light-secondary: #E8F7FF;
 $light-info: #EBF3FE;
 $light-success: #E6FFFA;
 $light-warning: #FEF5E5;
 $light-danger: #FBF2EF;
 $light-indigo: #EBF3FE;
-$dark-emphasis: #1E1E1E;
-$lightgray-emphasis: #8B8B8B;
-$gray-emphasis: #595955;
-$subtle-dark: #161616;
-
+$dark-emphasis:#1E1E1E;
+$lightgray-emphasis:#8B8B8B;
+$gray-emphasis:#595955;
+$subtle-dark:#161616;
+$light-emphasis:#EDE8E1;
+$gray-variant:#959086;
+$grayscale-variant:#8D877E;
+$lightscale-variant:#4D4D4D;
+$darkscale-variant:#424553;
+$grayextra:#94969F;
+$lightextra:#E0EAFD;
+$darkextra:#B7C0D2;
 
 // Theme Colorss
 $theme-colors: (
@@ -79,8 +86,16 @@ $theme-colors: (
   "lightpink":$lightpink,
   "lightgray-emphasis":$lightgray-emphasis,
   "gray-emphasis":$gray-emphasis,
-  "subtle-dark":$subtle-dark,
-  "dark-light":$dark-light,
+   "subtle-dark":$subtle-dark,
+   "dark-light":$dark-light,
+   "light-emphasis":$light-emphasis,
+   'gray-variant':$gray-variant,
+   'grayscale-variant':$grayscale-variant,
+   'lightscale-variant':$lightscale-variant,
+   'darkscale-variant':$darkscale-variant,
+    'grayextra':$grayextra,
+    'lightextra':$lightextra,
+    'darkextra':$darkextra,
   ) !default;
 
 // Spacer
@@ -107,9 +122,15 @@ $spacers: (
   54:36px,
   55:14px,
   56:211px,
+  57:55px,
+  58:6px,
+  59:2px,
+  60:11px,
+  61:92px,
+  63:15px,
   ) !default;
 
-// Font Sizes
+  // Font Sizes
 $font-sizes: (
   1: 10px,
   2: 12px,
@@ -125,7 +146,6 @@ $font-sizes: (
   13:60px,
   14:65px,
   22:22px,
-  26:26px,
   52:25px,
   53:24px,
   54:38px,
@@ -135,14 +155,15 @@ $font-sizes: (
   ) !default;
 $font-size-base: 0.875rem !default;
 
-// scss-docs-start container-max-widths
+  // scss-docs-start container-max-widths
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1140px,
-  xxl: 1400px) !default;
-// scss-docs-end container-max-widths
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1400px
+  ) !default;
+  // scss-docs-end container-max-widths
 
 // Common
 $min-contrast-ratio: 1.7 !default;
@@ -162,7 +183,7 @@ $grid-gutter-width: 24px !default;
 $btn-padding-y: 7px !default;
 $btn-padding-x: 16px !default;
 $btn-font-weight: 500 !default;
-$btn-border-radius: 0px !default;
+$btn-border-radius:0px !default;
 $btn-box-shadow: unset !default;
 $btn-font-size: 18 !default;
 $btn-border-radius-lg: 9px !default;
@@ -177,7 +198,7 @@ $line-height-lg: 2 !default;
 
 // Body
 $body-bg: $white !default;
-$body-color: #333333 !default;
+$body-color: #5A6A85 !default;
 
 // Heading
 $headings-color: $dark !default;
@@ -211,9 +232,9 @@ $badge-border-radius: 4px;
 
 // Style anchor elements.
 
-$link-color: #073BA8 !default;
-$link-hover-color: $primary;
-$link-hover-decoration: null !default;
+$link-color:                              #073BA8 !default;
+$link-hover-color:                        $primary;
+$link-hover-decoration:                   null !default;
 
 
 // Table
@@ -255,6 +276,10 @@ $dropdown-box-shadow: rgb(145 158 171 / 20%) 0px 0px 2px 0px,
 
 // Modal
 $modal-content-border-width: 0 !default;
+$modal-lg:650px !default;
+
+//modal offcanvas
+$offcanvas-horizontal-width: 350px !default;
 
 // navbar
 $navbar-light-color: rgba($gray-600, 1) !default;
@@ -262,21 +287,16 @@ $navbar-light-hover-color: rgba($primary, 1) !default;
 $navbar-dark-color: rgba($gray-300, 1) !default;
 $navbar-dark-hover-color: rgba($primary, 1) !default;
 
-$font-family-sans-serif: 'Helvetica Neue LT Std',
-  sans-serif !default;
+$font-family-sans-serif: 'Helvetica Neue LT Std', sans-serif !default;
 
-$accordion-icon-color: #D1CDC5;
-$accordion-icon-active-color: $indigo;
+$accordion-icon-color:#D1CDC5;
+$accordion-icon-active-color:$indigo;
 
-$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/> <path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>"
-);
-$accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/>  <path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");
-$accordion-icon-width: 1.75rem !default;
-
-.accordion-button:focus {
+$accordion-button-icon:         url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/> <path d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/></svg>");
+$accordion-button-active-icon:  url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/>  <path d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");
+$accordion-icon-width:  1.75rem !default;
+.accordion-button:focus{
   box-shadow: none !important;
 }
 
-
-$nav-pills-border-radius: 0;
-$nav-link-color: $dark;
+$offcanvas-horizontal-width:      650px;

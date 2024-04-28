@@ -4,7 +4,7 @@ import { Whybuydata } from '@/api/homepage/homepage'
 const WhyBuy = () => {
     return (
         <>
-            <div className='pt-12'>
+            <div className='py-12'>
                 <div className='container'>
                     <h2 className='text-center fs-8 fw-semibold mb-5'>Why buy on the iVogue.</h2>
                     <div className='row' >

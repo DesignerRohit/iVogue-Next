@@ -48,12 +48,14 @@
 
         li button:before {
             font-size: 12px;
-            color: var(--bs-primary);
+        }
+        li button:focus:before{
+            opacity:0.25 !important;
         }
 
         li.slick-active button:before {
             color: var(--bs-primary);
-            opacity: 1;
+            opacity: 1 !important;
         }
     }
 
@@ -93,6 +95,24 @@
       }
 }
 
+.canvas-footer{
+    overflow-y: auto;
+    height: calc(100vh - 320px);
+}
+
+.footer-links{
+    li{
+        a{
+            transition: .3s;
+
+            &:hover{
+                margin-left: 10px;
+                transition: .3s;
+                color: yellow !important;
+            }
+        }
+    }
+}
 
 
 body {

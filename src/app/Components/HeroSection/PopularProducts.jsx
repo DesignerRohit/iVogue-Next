@@ -3,8 +3,10 @@
 import React from 'react'
 import Image from 'next/image'
 import Slider from "react-slick";
-import img1 from "../../../../public/images/homepage/mobile.png";
+import img1 from "/public/images/homepage/mobile.png";
 import FeaturedProduct from './FeaturedProduct';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const PopularProducts = () => {
     const settings = {

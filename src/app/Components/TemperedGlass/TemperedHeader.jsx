@@ -3,8 +3,7 @@
 import summerSale from "/public/images/summer_sale.png";
 import Image from "next/image";
 
-const CoverHeader = () => {
-
+const TemperedHeader = () => {
   return (
     <>
       <div className="wrapper bg-light-primary">
@@ -13,10 +12,10 @@ const CoverHeader = () => {
         </div>
       </div>
       <div className="container">
-        <h2 className="fw-bold fs-8 mb-11 text-center mt-12">Covers & Cases</h2>
+        <h2 className="fw-bold fs-8 mb-11 text-center mt-12">Tempered Glasses</h2>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default CoverHeader;
+export default TemperedHeader

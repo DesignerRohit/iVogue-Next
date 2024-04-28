@@ -21,7 +21,7 @@ const AccessoriesCard = ({image,price}) => {
             <div className="round-25 bg-brown "></div>
             <div className="round-25 bg-success "></div>
           </div>
-          <input className="form-check-input position-absolute top-0 right-0" type="checkbox" value="" id="flexCheckDefault"></input>
+          <input className="form-check-input position-absolute top-0" type="checkbox" value="" id="flexCheckDefault" style={{right:"20px"}}></input>
         </div>
     </>
   )
