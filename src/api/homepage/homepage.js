@@ -32,7 +32,7 @@ export const BlogData = [
         title:'Lorem ipsum dolor sit amet consectetur.',
         desc:'Lorem ipsum dolor sit amet consectetur. Sed sed sit nunc convallis enim neque pharetra. Ante erat at arcu turpis ultricies. Senectus at ipsum vitae id quam tortor sed senectus sed. ',
         date:'15 Nov 2022',
-        link:'/blog/blog-details'
+        link:'#'
     },
     { 
         img: blog2, 
@@ -40,7 +40,7 @@ export const BlogData = [
         title:'Lorem ipsum dolor sit amet consectetur.',
         desc:'Lorem ipsum dolor sit amet consectetur. Sed sed sit nunc convallis enim neque pharetra. Ante erat at arcu turpis ultricies. Senectus at ipsum vitae id quam tortor sed senectus sed. ',
         date:'15 Nov 2022',
-        link:'/blog/blog-details'
+        link:'#'
     },
     { 
         img: blog3, 
@@ -48,7 +48,7 @@ export const BlogData = [
         title:'Lorem ipsum dolor sit amet consectetur.',
         desc:'Lorem ipsum dolor sit amet consectetur. Sed sed sit nunc convallis enim neque pharetra. Ante erat at arcu turpis ultricies. Senectus at ipsum vitae id quam tortor sed senectus sed. ',
         date:'15 Nov 2022',
-        link:'/blog/blog-details'
+        link:'#'
     }
 ]
 

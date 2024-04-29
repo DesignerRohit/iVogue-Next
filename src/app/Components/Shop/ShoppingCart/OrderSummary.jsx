@@ -7,7 +7,7 @@ const OrderSummary = () => {
   const productContext = useProduct();
   const cartInfo = productContext.cartvalue;
   const[totalPrice,setTotal] = useState(0);
-  console.log(productContext.value);
+
 
 
   const handleTotalValue = () => {
@@ -21,7 +21,6 @@ const OrderSummary = () => {
    let total = filteredData.reduce((accum,item)=>{
         return accum+(item.quantity*item.discountedPrice)
     },0);
-    console.log(total);
     setTotal(total);
   }
   
@@ -41,7 +40,7 @@ useEffect(()=>{
 })
   return (
     <>
-      <div className="col-lg-5 pe-0 position-relative ">
+      <div className="col-lg-5 pe-md-0 position-relative ">
         <div className="bg-cover ">
           <hr className="hr-order d-lg-block d-none w-100" />
           <hr className="hr-second-order d-lg-block d-none" />

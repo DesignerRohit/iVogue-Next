@@ -16,7 +16,7 @@ const LatestBlog = () => {
                             return (
                                 <div className="col-md-4 col-sm-12 mb-7" key={blog.key}>
                                     <div className='border p-4'>
-                                        <Link href={blog.link} className='text-decoration-none' >
+                                        <Link href={`/blog/${blog.key}`} className='text-decoration-none' >
                                             <div className='overflow-hidden hover-img '>
                                                 <Image
                                                     src={blog.img}

@@ -4,7 +4,7 @@ import { Icon } from "@iconify/react";
 const ExpressCheckout = () => {
   return (
     <>
-                  <div className="col-lg-6 ">
+                  <div className="col-xl-6 ">
               <div className="position-relative">
               <div className="checkout-cover"></div>
               <h3 className="text-uppercase fs-8 fw-bold pt-8">

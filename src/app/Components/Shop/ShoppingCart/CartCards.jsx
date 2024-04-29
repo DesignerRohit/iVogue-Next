@@ -54,14 +54,14 @@ const CartCards = ({product_image,title,quantity,discountedPrice,prodId,type}) =
   return (
     <>
       <div className="row pt-5">
-        <div className="col-md-6">
+        <div className="col-6">
          <div className="row align-items-center ">
-          <div className="col-lg-4">
+          <div className="col-4">
           <div className="bg-light-emphasis">
               <Image src={product_image} alt="image" className="img-fluid" />
             </div>
           </div>
-          <div className="col-lg-8">
+          <div className="col-8">
           <div className="d-flex flex-column gap-3">
               <p className="mb-0 fs-6 lh-sm  fw-bold text-black text-uppercase">
                 {`${type} For ${title}`}
@@ -79,7 +79,7 @@ const CartCards = ({product_image,title,quantity,discountedPrice,prodId,type}) =
           </div>
          </div>
         </div>
-        <div className="col-md-4 align-self-center ">
+        <div className="col-4 align-self-center ">
           <div className="d-flex gap-55 align-items-center justify-content-center ">
             <button className='btn p-0 border-0' onClick={handleReduceItem}>
             <Icon
@@ -98,7 +98,7 @@ const CartCards = ({product_image,title,quantity,discountedPrice,prodId,type}) =
            </button>
           </div>
         </div>
-        <div className="col-md-2 align-self-center justify-content-center ">
+        <div className="col-2 align-self-center justify-content-center ">
           <h3 className="fs-6 fw-bold text-black text-center">{`Rs.${item*discountedPrice}`}</h3>
         </div>
       </div>

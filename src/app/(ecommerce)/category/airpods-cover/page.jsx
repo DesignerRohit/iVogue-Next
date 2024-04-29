@@ -58,12 +58,38 @@ const AirpodsCover = () => {
               <Link data-bs-toggle="offcanvas" href="#offcanvasExample" className="d-xl-none d-block"> 
               <Icon icon='mage:filter' className="text-black fs-9" />
               </Link>
-             <div className="d-flex justify-content-between gap-51 py-lg-2 py-58 px-51 border border-2 border-subtle-dark pointer">
-                <span className="fs-5  fw-normal text-black">
-                Sort By : to sellers
-                </span>
-                <Icon icon="f7:chevron-right" className="fs-53 text-black" />
-            </div>
+              <div className="dropdown sort-parent-dropdown">
+                <button
+                  className="d-flex justify-content-between gap-51 py-lg-2 py-58 px-51 border border-2 border-subtle-dark pointer dropdown-toggle bg-white position-relative sort-dropdown"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span className="fs-5  fw-normal text-black">
+                    Sort By : to sellers
+                  </span>
+                  <Icon
+                    icon="f7:chevron-right"
+                    className="fs-53 text-black sort-icon"
+                  />
+                </button>
+                <ul className="dropdown-menu top-0 w-100">
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Another action
+                    </a>
+                  </li>
+                  <li>
+                    <a className="dropdown-item" href="#">
+                      Something else here
+                    </a>
+                  </li>
+                </ul>
+              </div>
              </div>
             <div className="row gy-4">
               {airpods.length == 0 ? (

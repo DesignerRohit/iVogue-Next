@@ -27,25 +27,30 @@ const FilterBlock = () => {
        </div>
     </div>
     <hr className="filter-line" />
-    <div className="d-flex justify-content-between mb-4">
+    <div className="d-flex justify-content-between mb-4 filter-brand" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
       <h4 className="fs-22 fw-bold text-black">Choose Brand</h4>
-      <Icon icon='fluent:chevron-right-16-filled' className="fs-52 text-black" />
+      <Icon icon='fluent:chevron-right-16-filled' className="fs-52 text-black filter-brand-icon" />
     </div>
-      <div className="brand-filter d-flex flex-column gap-13">
+    <div className="collapse show" id="collapseExample">
+    <div className="brand-filter d-flex flex-column gap-13 pb-4">
        {FILTER_BRAND.map((brand)=>{
         return (<FilterBrand key={brand.key} brand={brand.brand} quantity={brand.quantity} />)
        })}
       </div>
-      <hr className="filter-line" />
-      <div className="d-flex justify-content-between mb-4">
+    </div>
+    <hr className="filter-line my-0" />
+      <div className="d-flex justify-content-between my-4 filter-model collapsed" data-bs-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
       <h4 className="fs-22 fw-bold text-black">Choose Model</h4>
-      <Icon icon='fluent:chevron-right-16-filled' className="fs-52 text-black" />
+      <Icon icon='fluent:chevron-right-16-filled' className="fs-52 text-black filter-model-icon" />
      </div>
-     <div className="brand-filter d-flex flex-column gap-13">
+     <div className="collapse  " id="collapseExample2">
+     <div className="brand-filter d-flex flex-column gap-13 pb-4">
        {FILTER_MODEL.map((model)=>{
         return (<FilterModel key={model.key} model={model.model} quantity={model.quantity} />)
        })}
       </div>
+     </div>
+     <hr className="filter-line my-0" />
     </>
   );
 };

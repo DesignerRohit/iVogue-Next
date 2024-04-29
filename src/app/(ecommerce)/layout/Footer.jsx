@@ -54,10 +54,10 @@ const Footer = () => {
                 <div className='col-md-4'>
                   <h4 className='text-white fs-22 pb-2 mb-0'>Info</h4>
                   <hr className='w-50 mt-0 mb-4 border-top-2 border-2 border-primary'></hr>
-                  <ul className='footer-links d-flex flex-column gap-4 list-unstyled mb-0 ms-auto'>
-                    <li className='fw-light text-white fs-5'><Link href={'/'} className='text-decoration-none fw-light text-white'>0000-0000-000</Link></li>
-                    <li className='fw-light text-white fs-5'><Link href={'/'} className='text-decoration-none fw-light text-white'> xyz@logoname.com</Link></li>
-                    <li className='fw-light text-white fs-5'><Link href={'/'} className='text-decoration-none fw-light text-white'>456 Sunshine Avenue Palm City New Delhi, India 110001</Link></li>
+                  <ul className=' d-flex flex-column gap-4 list-unstyled mb-0 ms-auto'>
+                    <li className='fw-light text-white fs-5'>0000-0000-000</li>
+                    <li className='fw-light text-white fs-5'> xyz@logoname.com</li>
+                    <li className='fw-light text-white fs-5'>456 Sunshine Avenue Palm City New Delhi, India 110001</li>
                   </ul>
                 </div>
               </div>

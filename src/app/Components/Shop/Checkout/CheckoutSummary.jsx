@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const CheckoutSummary = () => {
-    const [discount , setDiscount] = useState("Apply Discount");
+    const [discount , setDiscount] = useState("Apply Discount Code");
     const productContext = useProduct();
       
       const filteredCart = productContext.cartvalue.map((prod)=>{
@@ -27,14 +27,18 @@ const CheckoutSummary = () => {
 
   return (
     <>
-            <div className="col-lg-6 pe-0">
+            <div className="col-xl-6 pe-0 mb-sm-0 mb-10">
               <h3 className="text-uppercase fs-8 fw-bold mt-8">
                 Order Summary
               </h3>
-             {filteredCart.length===0?null:filteredCart.map((prod)=>{
+               <div className="overflow-auto d-flex">
+               <div style={{minWidth:"550px"}}>
+              {filteredCart.length===0?null:filteredCart.map((prod)=>{
               return <OrderCard image={prod.thumbnail} discountedPrice={prod.discountedPrice} quantity={prod.quantity} title={prod.title} type={prod.mastercat} />
              })}
-              <div className="row">
+              </div>
+               </div>
+              <div className="row gy-4">
                 <div className="col-lg-8 h-100">
                   <input
                     type="text"

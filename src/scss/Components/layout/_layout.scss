@@ -1,14 +1,16 @@
 
 
 
-  .covertype.active{
-    border-width: 0px 0px 3px 0px !important;
-    border-style: solid !important;
-    border-color: #000090 !important;
-    border-radius: 8px;
-  }
+.container{
+  max-width: 1400px !important;
+}
   .covertype{
     cursor: pointer;
+    &.active{
+      p{
+        color: var(--bs-primary) !important;
+      }
+    }
   }
   .chat-icon{
     bottom: 15px;
@@ -38,10 +40,7 @@
   background-color: #92711C;
 }
 
-// Carousel
-// .thumbSlider .slick-current > .active-slide{
-//   background-color: rgb(175, 175, 255);
-// }
+
 .thumbSlider{
   .slick-current{
     .active-slide{
@@ -165,12 +164,12 @@ border: 7px solid white;
   opacity: 0 !important;
     }
 .accessories .slick-arrow.slick-prev {
-  left: 0;
+  left: 0 !important;
   background: url("https://img.icons8.com/ios/50/000000/long-arrow-left.png") 0
     0 / 100% no-repeat;
 }
 .accessories .slick-arrow.slick-next {
-  right: 0;
+  right: 0 !important;
   background: url("https://img.icons8.com/ios/50/000000/long-arrow-right.png") 0 0 / 100% no-repeat;
 }
 
@@ -333,5 +332,79 @@ margin: 1px;
     width: 100%;
     justify-content: space-between;
     border-width: 2px 2px 0px 2px;
+  }
+}
+
+//product-filter-page
+
+.filter-brand,.filter-model{
+  &.collapsed{
+    .filter-brand-icon{
+      transform: rotate(0deg);
+    }
+    .filter-model-icon{
+      transform: rotate(0deg);
+    }
+  }
+  .filter-brand-icon{
+    transform: rotate(90deg);
+    transition: all 0.1s ease-in-out;
+  }
+  .filter-model-icon{
+    transform: rotate(90deg);
+    transition: all 0.1s ease-in-out;
+  }
+}
+
+.sort-dropdown{
+  .sort-icon{
+    transition: all 0.1s ease-in-out;
+  }
+  &.show{
+    .sort-icon{
+      transform: rotate(90deg);
+    }
+  }
+  &::after{
+    display: none !important;
+  }
+}
+
+
+//cart-offcanvas
+.cart-offcanvas{
+  width: 500px !important;
+}
+
+//footer links
+.footer-links{
+  li{
+      a{
+          transition: .3s;
+
+          &:hover{
+              margin-left: 10px;
+              transition: .3s;
+              color: yellow !important;
+          }
+      }
+  }
+}
+
+.max-w-100{
+  max-width: 100% !important;
+}
+
+//shopping-cart
+
+.shop-cart-scroll{
+  @media only screen and (max-width:991px){
+    overflow: auto;
+  }
+  .shop-cart-items{
+    @media only screen and (max-width:991px){
+      min-width: 700px;
+    }
+   
   }
 }

@@ -11,9 +11,9 @@ const ShoppingCart = () => {
   const cartContext = useProduct();
   return (
     <>
-    <div>
+    <div className="overflow-x-hidden ">
       <div className="container mb-52">
-        <div className="row">
+        <div className="row gy-4">
           <CartItems/>
           <OrderSummary/>
         </div>

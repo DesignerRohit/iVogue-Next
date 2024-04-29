@@ -94,27 +94,25 @@
         opacity: 1;
       }
 }
-
-.canvas-footer{
-    overflow-y: auto;
-    height: calc(100vh - 320px);
+body,html {
+    overflow-x: hidden;
 }
 
-.footer-links{
-    li{
-        a{
-            transition: .3s;
+// Responsive css
 
-            &:hover{
-                margin-left: 10px;
-                transition: .3s;
-                color: yellow !important;
+@media screen and (max-width:1199px){
+    #menucanvasExample{
+        max-width: 300px;
+        ul{
+            li{
+                a{
+                    color: $white;
+                    font-weight: 400;
+                }
             }
         }
     }
-}
-
-
-body {
-    overflow-x: hidden;
+    #Cartoffcanvas{
+        max-width:100%;
+    }
 }

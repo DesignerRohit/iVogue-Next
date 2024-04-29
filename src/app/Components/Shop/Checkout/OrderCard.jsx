@@ -6,7 +6,7 @@ const OrderCard = ({image,quantity,discountedPrice,title,type}) => {
     <div className="d-flex justify-content-between align-items-center my-8">
     <div className="d-flex align-items-center gap-3 text-nowrap row">
        <div className="row">
-        <div className="col-lg-2">
+        <div className="col-2">
         <div className="bg-light-emphasis">
         <Image
           src={image}
@@ -15,7 +15,7 @@ const OrderCard = ({image,quantity,discountedPrice,title,type}) => {
         />
       </div>
         </div>
-        <div className="col-lg-10 d-flex align-items-center ">
+        <div className="col-10 d-flex align-items-center ">
         <div className="d-flex flex-column gap-0">
         <p className="mb-0 fs-6 fw-bold text-black text-uppercase">
           {`${type} For ${title}`}

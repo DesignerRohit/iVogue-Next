@@ -39,28 +39,28 @@ const SelectedProduct = ({data}) => {
 
       const handleshoppingCart = () => { 
 
-        const filteredData = productContext.value.map((prod)=>{
-           return(prod.key===data.key?{...prod,quantity:prod.quantity+prodQuantity}:prod)
-        });
-        productContext.setallProducts(filteredData);
-        if(productContext.cartvalue.length===0){
-          const cartInfo = [...productContext.cartvalue,data.key];
-          productContext.setCartData(cartInfo);
-        }
-        else{
-          let filteredInfo = productContext.cartvalue.filter((prod)=>{
-            return (prod===data.key)
-          });
-          if(filteredInfo.length===0){
-            const cartInfo = [...productContext.cartvalue,data.key];
-          productContext.setCartData(cartInfo)
-          }
-          else{}
-        }
         if(prodQuantity===0){
           toast.error("No Item Added!");
         }
         else{
+          const filteredData = productContext.value.map((prod)=>{
+            return(prod.key===data.key?{...prod,quantity:prod.quantity+prodQuantity}:prod)
+         });
+         productContext.setallProducts(filteredData);
+         if(productContext.cartvalue.length===0){
+           const cartInfo = [...productContext.cartvalue,data.key];
+           productContext.setCartData(cartInfo);
+         }
+         else{
+           let filteredInfo = productContext.cartvalue.filter((prod)=>{
+             return (prod===data.key)
+           });
+           if(filteredInfo.length===0){
+             const cartInfo = [...productContext.cartvalue,data.key];
+           productContext.setCartData(cartInfo)
+           }
+           else{}
+         }
           router.push(`/shop/shopping-cart/`);
         }
       }

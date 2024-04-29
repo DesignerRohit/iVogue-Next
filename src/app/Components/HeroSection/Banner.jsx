@@ -1,22 +1,21 @@
 "use client"
-
+import React, { useEffect } from 'react'
 import Image from 'next/image'
-import img1 from "../../../../public/images/homepage/mobile.png";
-import React, { useEffect } from 'react';
-import WOW from 'wowjs';
-import 'wowjs/css/libs/animate.css';
+import img1 from "/public/images/homepage/mobile.png";
+// import WOW from 'wowjs';
+// import 'wowjs/css/libs/animate.css';
 
 const Banner = () => {
-  useEffect(() => {
-    const wow = new WOW.WOW({live: false});
-    wow.init({
-      duration: 1000
-    });
+  // useEffect(() => {
+  //   const wow = new WOW.WOW({live: false});
+  //   wow.init({
+  //     duration: 1000
+  //   });
     
-  }, []);
+  // }, []);
   return (
     <>
-     <div className='bg-primary-subtle pt-9 overflow-hidden'>
+     <div className='bg-primary-subtle pt-9'>
         <div className='text-center '>
             <h1 className='fw-bolder fs-14 text-dark mb-0 lh-1'>iPhone 15 Pro Max</h1>
             <p className='fw-bolder fs-10 text-dark'>Cases Villa 360° Protection Case 9H </p>
@@ -24,7 +23,7 @@ const Banner = () => {
             <div>
             <Image
                 src={img1}
-                alt="img" className='wow rotateInUpRight'
+                alt="img"
                 style={{ width: "auto", height: "auto" }}
               />
             </div>
