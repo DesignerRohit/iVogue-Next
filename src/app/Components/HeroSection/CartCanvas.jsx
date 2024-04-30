@@ -32,7 +32,7 @@ const CartCanvas = () => {
           <Icon icon="tabler:circle-x" fontSize={25} />
         </Link>
       </div>
-      <div className="offcanvas-body px-0">
+      <div className="offcanvas-body overflow-x-hidden px-0">
         <div className="position-relative  text-center my-4 mb-9">
           <Link href='#' className='text-black  bg-white z-1 px-10 hover-link position-relative'>
             <Icon icon="tabler:shopping-cart" fontSize={25} data-bs-toggle="offcanvas" href="#Cartoffcanvas" role="button" aria-controls="Cartoffcanvas" />

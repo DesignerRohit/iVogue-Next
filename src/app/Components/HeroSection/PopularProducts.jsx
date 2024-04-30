@@ -54,9 +54,9 @@ const PopularProducts = () => {
       };
     return (
         <>
-            <div className='py-12'>
+            <div className='py-md-12 py-8'>
                 <div className='container'>
-                    <h2 className='text-center fs-8 fw-semibold mb-5'>Popular Products</h2>
+                    <h2 className='text-center fs-8 fw-semibold mb-sm-5 mb-3'>Popular Products</h2>
                     <div className="slider-container accessories">
                         <Slider {...settings}>
                             <FeaturedProduct image={img1} title="iPhone 15 Pro Max" price="1399" discount="700" discountedPrice='699' />

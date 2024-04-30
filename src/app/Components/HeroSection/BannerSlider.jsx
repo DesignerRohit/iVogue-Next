@@ -28,8 +28,15 @@ const BannerSlide = () => {
                                         <Image
                                             src={bannerslider.img}
                                             alt="img"
-                                            className='object-fit-cover'
+                                            className='object-fit-cover  d-md-block d-none'
                                             style={{ width: "100%", height: "700px" }}
+
+                                        />
+                                        <Image
+                                            src={bannerslider.img}
+                                            alt="img"
+                                            className='object-fit-cover d-md-none d-block'
+                                            style={{ width: "100%", height: "400px" }}
 
                                         />
                                         <div className='position-absolute banner-text'>

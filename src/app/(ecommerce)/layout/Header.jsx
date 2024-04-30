@@ -32,7 +32,7 @@ const Header = () => {
                 <Icon icon="tabler:search" fontSize={25} />
               </Link>
             </div>
-            <Link href={'/'}><Image src={logo} alt='image' /></Link>
+            <Link href={'/'}><Image src={logo} alt='image' className='logo' /></Link>
 
             {/* Mobile Menu  */}
             <div className="offcanvas offcanvas-end bg-primary" tabIndex="-1" id="menucanvasExample" aria-labelledby="menucanvasExampleLabel">
