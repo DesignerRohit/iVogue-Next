@@ -4,7 +4,7 @@ import React from 'react'
 const Pagination = () => {
   return (
     <>
-      <ul className="d-flex flex-wrap  gap-13 list-unstyled d-flex justify-content-center mt-14 mb-14">
+      <ul className="d-flex flex-wrap  gap-13 list-unstyled d-flex justify-content-center my-md-14 my-8 px-6">
         <li className="round-42 border-2 d-flex justify-content-center align-items-center btn p-0 btn-outline-dark-emphasis fs-5">
           <Icon icon="fluent:chevron-left-28-regular" className=" fs-8" />
         </li>

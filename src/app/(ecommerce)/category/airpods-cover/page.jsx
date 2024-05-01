@@ -116,7 +116,7 @@ const AirpodsCover = () => {
         </div>
       </div>
       <Pagination/>
-      <div className="mb-52">
+      <div className="mb-md-52 mb-10">
         <Newsletter />
       </div>
 

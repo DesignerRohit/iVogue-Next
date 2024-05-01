@@ -77,10 +77,10 @@ const Header = () => {
               </form>
 
               {/* Search Modal */}
-              <div class="modal fade" id="searchModal" tabIndex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
-                <div class="modal-dialog  m-0 max-w-100 modal-xl">
-                  <div class="modal-content rounded-0">
-                    <div class="modal-body">
+              <div className="modal fade" id="searchModal" tabIndex="-1" aria-labelledby="searchModalLabel" aria-hidden="true">
+                <div className="modal-dialog  m-0 max-w-100 modal-xl">
+                  <div className="modal-content rounded-0">
+                    <div className="modal-body">
                       <form className='ps-2 border border-light-gray rounded-2 position-relative d-flex align-items-center'>
                         <Icon icon='bitcoin-icons:search-outline' className='text-muted fs-8' />
                         <input type="search" className="form-control ps-2 py-2 fw-light fs-4 border-0 shadow-none " id="exampleFormControlInput1" placeholder="Search for Products, brands and more..." />

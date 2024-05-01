@@ -4,14 +4,14 @@ import { Whybuydata } from '@/api/homepage/homepage'
 const WhyBuy = () => {
     return (
         <>
-            <div className='py-12'>
+            <div className='py-sm-12 py-7'>
                 <div className='container'>
                     <h2 className='text-center fs-8 fw-semibold mb-5'>Why buy on the iVogue.</h2>
                     <div className='row' >
                     {Whybuydata.map((WhyBuy) => {
                       return (
-                        <div className="col-md-4 col-sm-12" key={WhyBuy.key}>
-                            <div className='bg-gray p-8'>
+                        <div className="col-lg-4 mb-lg-0 mb-6" key={WhyBuy.key}>
+                            <div className='bg-gray p-sm-8 p-4'>
                                 <div className='row d-flex align-items-center px-2'>
                                     <div className='col-4 border-end py-4'>
                                         <Image

@@ -12,7 +12,7 @@ const ShoppingCart = () => {
   return (
     <>
     <div className="overflow-x-hidden ">
-      <div className="container mb-52">
+      <div className="container mb-md-52 mb-10">
         <div className="row gy-4">
           <CartItems/>
           <OrderSummary/>

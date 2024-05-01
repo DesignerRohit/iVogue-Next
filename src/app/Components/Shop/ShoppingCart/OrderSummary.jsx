@@ -40,19 +40,19 @@ useEffect(()=>{
 })
   return (
     <>
-      <div className="col-lg-5 pe-md-0 position-relative ">
+      <div className="col-xl-5  position-relative ">
         <div className="bg-cover ">
           <hr className="hr-order d-lg-block d-none w-100" />
           <hr className="hr-second-order d-lg-block d-none" />
         </div>
         <div className="floating-block">
-          <div className=" pb-10 ">
-            <div className="d-flex justify-content-between py-8 mb-10 ">
-              <h3 className=" ps-9 fw-bold fs-7 text-dark text-uppercase ">
+          <div className=" pb-10 ps-lg-8 ps-7 pe-xxl-0 pe-lg-7 pe-4">
+            <div className="d-flex justify-content-between py-8 mb-sm-10 mb-0 ">
+              <h3 className=" fw-bold fs-7 text-dark text-uppercase ">
                 Order Summary
               </h3>
             </div>
-            <div className="ps-9 d-flex flex-column gap-7">
+            <div className="d-flex flex-column gap-7">
               <div className="benefit d-flex flex-column  gap-7">
                 <div className="addItem d-flex justify-content-between py-2 px-51 border border-2 border-subtle-dark">
                   <div className="d-flex gap-1 align-items-center ">
@@ -94,7 +94,7 @@ useEffect(()=>{
               </div>
             </div>
           </div>
-          <div className="ps-9 py-10 d-flex flex-column gap-55">
+          <div className="ps-lg-8 ps-7 pe-xxl-0 pe-lg-7 pe-4 py-10 d-flex flex-column gap-55">
             <h4 className="fs-6 fw-bold text-black">Order Summary</h4>
             <div className="d-flex justify-content-between align-align-items-center ">
               <span className="text-black fs-6 fw-normal">

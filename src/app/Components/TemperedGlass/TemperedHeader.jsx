@@ -12,7 +12,7 @@ const TemperedHeader = () => {
         </div>
       </div>
       <div className="container">
-        <h2 className="fw-bold fs-8 mb-11 text-center mt-12">Tempered Glasses</h2>
+        <h2 className="fw-bold fs-8  text-center  my-md-11 my-8">Tempered Glasses</h2>
       </div>
     </>
   )

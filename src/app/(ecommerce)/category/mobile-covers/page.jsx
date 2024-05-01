@@ -125,7 +125,7 @@ const MobileCovers = () => {
   return (
     <>
       <CoverHeader />
-      <div className="d-flex gap-4 overflow-x-auto d-flex justify-content-md-center pb-md-11 pb-8">
+      <div className="d-flex gap-4 overflow-x-auto d-flex justify-content-md-center pb-md-11 pb-0 mb-sm-0 mb-8">
         <div
           className={`d-flex flex-column gap-3 covertype ${state.allCase}`}
           onClick={() => {
@@ -251,7 +251,7 @@ const MobileCovers = () => {
         </div>
       </div>
       <Pagination />
-      <div className="mb-52">
+      <div className="mb-md-52 mb-10">
         <Newsletter />
       </div>
 

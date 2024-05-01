@@ -12,7 +12,7 @@ const ProductCard = ({title,category,price,discountedPrice,thumbnail,image,disco
   return (
     <>
       
-      <div className="col-xl-4  col-lg-6" onClick={() => {router.push(`/category/${parenturl}/${prodId}`)}}>
+      <div className="col-xl-4 col-sm-6 col-lg-4" onClick={() => {router.push(`/category/${parenturl}/${prodId}`)}}>
         <div className="bg-light py-3 px-13">
         <div
           className="group-img position-relative"

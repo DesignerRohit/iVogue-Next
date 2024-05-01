@@ -7,17 +7,17 @@ import { Icon } from '@iconify/react'
 const LatestBlog = () => {
     return (
         <>
-            <div className='py-12'>
+            <div className='py-sm-12 py-6'>
                 <div className='container'>
-                    <div className='d-flex justify-content-between align-items-center mb-5'>
+                    <div className='d-flex justify-content-between align-items-center mb-sm-5 mb-4'>
                         <h2 className='text-center fs-8 fw-semibold '>Latest Blog</h2>
-                        <button className="btn btn-primary px-10 py-2">View All</button>
+                        <button className="btn btn-primary px-sm-10 py-2">View All</button>
                     </div>
 
                     <div className='row'>
                         {BlogData.map((blog) => {
                             return (
-                                <div className="col-md-4 col-sm-12"  key={blog.key}>
+                                <div className="col-md-4 col-sm-12 mb-sm-0 mb-6"  key={blog.key}>
                                     <div className='border p-4'>
                                         <Link href={blog.link} className='text-decoration-none' >
                                             <div className='overflow-hidden hover-img '>

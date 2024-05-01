@@ -7,8 +7,8 @@ const Contact = () => {
             <div className="bg-primary-subtle">
                 <div className="container">
                     <div className="row">
-                        <div className="col-md-6">
-                            <div className="py-10">
+                        <div className="col-lg-6">
+                            <div className="py-sm-10 py-5">
                                 <h2 className="fs-8 text-black text-uppercase">Call Us today</h2>
                                 <ul className="d-flex align-items-center gap-4 mt-5 list-unstyled  mb-8 ">
                                     <li><Link href={"/"}><Icon icon='tabler:brand-facebook' className='text-black' height={30} /></Link></li>
@@ -70,9 +70,9 @@ const Contact = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-md-6">
-                            <div className="contact-wrap position-relative bg-white">
-                                <div className="py-10 ps-md-8 pb-0">
+                        <div className="col-lg-6 bg-white">
+                            <div className="contact-wrap position-relative bg-white mb-lg-0 mb-10">
+                                <div className="py-10 ps-lg-6 ps-0 pb-0 ">
                                     <h2 className="fs-8 text-black text-uppercase mb-4">Contact Us</h2>
                                     <div className="row ">
                                         <div className="col-md-6 mb-4">

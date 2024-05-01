@@ -115,11 +115,22 @@ body,html {
     #Cartoffcanvas{
         max-width:100%;
     }
+    .collection-box{
+        .title{
+            bottom: 0;
+        }
+    } 
 }
-
+@media screen and (max-width:991px) {
+  
+}
 @media screen and (max-width:767px) {
     .logo{
         max-height: 55px;
         width: auto;
-    }
+    } 
+}
+
+@media screen and (max-width:576px){
+    
 }

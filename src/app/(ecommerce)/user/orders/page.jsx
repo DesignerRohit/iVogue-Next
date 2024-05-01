@@ -25,7 +25,7 @@ const Orders = () => {
             </div>
           </div>
          </div>
-         <div className="row gy-4 mb-52">
+         <div className="row gy-4 mb-md-52 mb-10">
             <div className="col-lg-6">
             <div className=" d-flex flex-column py-4 bg-light-primary">
             <div className="d-flex gap-2 align-items-center text-black px-3">

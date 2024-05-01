@@ -13,7 +13,7 @@ const AirpodHeader = () => {
         </div>
       </div>
       <div className="container">
-        <h2 className="fw-bold fs-8 mb-11 text-center mt-12">Airpods Cover</h2>
+        <h2 className="fw-bold fs-8  text-center  my-md-11 my-8">Airpods Cover</h2>
       </div>
     </>
   )

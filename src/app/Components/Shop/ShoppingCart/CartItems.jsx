@@ -15,7 +15,7 @@ const CartItems = () => {
   });
   return (
     <>
-      <div className="col-lg-7">
+      <div className="col-xl-7">
         <div className="d-flex justify-content-between py-8 mb-10 border-2 border-bottom ">
           <h3 className="fw-bold fs-7 text-dark text-uppercase ">
             Shopping Cart
@@ -23,7 +23,7 @@ const CartItems = () => {
           <h3 className="fw-bold fs-7 text-dark text-uppercase ">{`${cartData.length} Item`}</h3>
         </div>
         <div className="shop-cart-scroll d-flex">
-         <div className="shop-cart-items">
+         <div className="shop-cart-items w-100">
          <div className="row pb-7">
           <div className="col-6">
             <div className="d-flex">

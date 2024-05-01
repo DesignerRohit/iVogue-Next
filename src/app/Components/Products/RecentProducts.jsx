@@ -58,7 +58,7 @@ const RecentProducts = () => {
           </h2>
         </div>
         {/* Slider */}
-        <div className="slider-container accessories mb-52">
+        <div className="slider-container accessories mb-md-52 mb-10">
           <Slider {...settings}>
             <CommonProductCard image={mobile_image} />
             <CommonProductCard image={mobile_image} />

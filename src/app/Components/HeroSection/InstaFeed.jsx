@@ -25,6 +25,14 @@ const Instafeed = () => {
               }
             },
             {
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 3,
+                initialSlide: 2
+              }
+            },
+            {
               breakpoint: 600,
               settings: {
                 slidesToShow: 2,
@@ -43,7 +51,7 @@ const Instafeed = () => {
     };
     return (
         <>
-            <div className='py-12 overflow-hidden'>
+            <div className='py-sm-12 py-8 overflow-hidden'>
                 <h2 className='text-center fs-8 fw-semibold mb-2'>Everyday Inspiration</h2>
                 <p className='text-center fs-6 text-dark'>Follow @ivogue for latest update</p>
                 <div className="slider-container">

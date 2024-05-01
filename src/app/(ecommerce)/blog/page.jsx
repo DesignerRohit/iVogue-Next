@@ -8,7 +8,7 @@ import Newsletter from '@/app/Components/HeroSection/Newsletter'
 const LatestBlog = () => {
     return (
         <>
-            <div className='py-12'>
+            <div className='py-md-12 py-8'>
                 <div className='container'>
                     <h2 className='text-center fs-8 fw-semibold mb-8'>Latest Blog</h2>
                     <div className='row'>
